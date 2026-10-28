@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>S.S. Memorial Public School - Daily Timetable</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Nunito+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#bec6e0",
+                        "secondary": "#50616b",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary-fixed": "#001e2c",
+                        "background": "#f7f9fb",
+                        "primary-fixed": "#dae2fd",
+                        "secondary-fixed-dim": "#b7c9d5",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f6",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#c4e7ff",
+                        "on-primary-fixed": "#131b2e",
+                        "tertiary": "#000000",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-dim": "#d8dadc",
+                        "secondary-fixed": "#d3e5f1",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary-container": "#008ebf",
+                        "inverse-surface": "#2d3133",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#565e74",
+                        "on-surface": "#191c1e",
+                        "inverse-primary": "#bec6e0",
+                        "on-secondary-fixed-variant": "#384953",
+                        "secondary-container": "#d3e5f1",
+                        "outline-variant": "#c6c6cd",
+                        "tertiary-container": "#001e2c",
+                        "surface-container": "#eceef0",
+                        "primary": "#000000",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface": "#f7f9fb",
+                        "tertiary-fixed-dim": "#7bd0ff",
+                        "on-tertiary-fixed-variant": "#004c69",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "outline": "#76777d",
+                        "on-secondary-fixed": "#0c1e26",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#191c1e",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary-container": "#566771",
+                        "primary-container": "#131b2e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#7c839b",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#45464d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "48px",
+                        "base-unit": "8px",
+                        "margin-mobile": "16px",
+                        "container-max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Nunito Sans"],
+                        "headline-md": ["Nunito Sans"],
+                        "label-md": ["Inter"],
+                        "headline-xl": ["Nunito Sans"],
+                        "headline-lg-mobile": ["Nunito Sans"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; color: #191c1e; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
+    </style>
+</head>
+<body class="bg-background flex flex-col min-h-screen pt-16 pb-20 md:pb-0">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 z-50 bg-surface dark:bg-on-background shadow-sm flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 transition-transform active:scale-95">
+<button class="p-2 hover:bg-surface-container-low dark:hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim">school</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">S.S. Memorial</h1>
+<button class="p-2 hover:bg-surface-container-low dark:hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim">notifications</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-gutter">
+<!-- Header Section -->
+<div class="mb-8 md:mb-10 text-center md:text-left">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Monday, Oct 23</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Class 10 - Section A</p>
+</div>
+<!-- Timetable List -->
+<div class="flex flex-col gap-6 w-full max-w-3xl mx-auto md:mx-0">
+<!-- Period 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex items-center gap-4 border border-outline-variant hover:shadow-lg transition-shadow">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-low rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">01</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg">English Literature</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container py-1 px-3 rounded-full">09:15 - 10:00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Mrs. Sharma
+                    </p>
+</div>
+</div>
+<!-- Period 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex items-center gap-4 border border-outline-variant hover:shadow-lg transition-shadow">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-low rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">02</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg border-t-4 border-blue-500 pt-1">Mathematics</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container py-1 px-3 rounded-full">10:00 - 10:45</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Mr. Gupta
+                    </p>
+</div>
+</div>
+<!-- Period 3 (Active) -->
+<div class="bg-primary-fixed rounded-lg p-4 flex items-center gap-4 shadow-sm border border-tertiary-fixed-dim transform scale-[1.02] transition-transform">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-primary-fixed-dim rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-primary-fixed">03</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-primary-fixed text-lg border-t-4 border-green-500 pt-1">Physics</h3>
+<span class="font-body-sm text-body-sm text-on-primary-fixed bg-tertiary-fixed py-1 px-3 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+                            Live Now • 10:45 - 11:30
+                        </span>
+</div>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Dr. Singh
+                    </p>
+</div>
+</div>
+<!-- Period 4 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex items-center gap-4 border border-outline-variant hover:shadow-lg transition-shadow opacity-60">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-low rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">04</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg border-t-4 border-green-500 pt-1">Chemistry</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container py-1 px-3 rounded-full">11:30 - 12:15</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Ms. Verma
+                    </p>
+</div>
+</div>
+<!-- Lunch Break -->
+<div class="bg-surface-container rounded-xl p-4 flex flex-col items-center justify-center gap-2 border border-dashed border-outline-variant shadow-inner my-2">
+<span class="material-symbols-outlined text-secondary text-3xl">restaurant</span>
+<h3 class="font-headline-md text-headline-md text-secondary text-lg">Lunch Break</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12:15 - 13:00 (45 mins)</span>
+</div>
+<!-- Period 5 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex items-center gap-4 border border-outline-variant hover:shadow-lg transition-shadow">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-low rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">05</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg border-t-4 border-yellow-500 pt-1">History</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container py-1 px-3 rounded-full">13:00 - 13:45</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Mr. Chatterjee
+                    </p>
+</div>
+</div>
+<!-- Period 6 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex items-center gap-4 border border-outline-variant hover:shadow-lg transition-shadow">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-low rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">06</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg border-t-4 border-purple-500 pt-1">Computer Science</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container py-1 px-3 rounded-full">13:45 - 14:30</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Mrs. Iyer
+                    </p>
+</div>
+</div>
+<!-- Period 7 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex items-center gap-4 border border-outline-variant hover:shadow-lg transition-shadow">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-low rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">07</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg border-t-4 border-orange-500 pt-1">Physical Education</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container py-1 px-3 rounded-full">14:30 - 15:15</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Coach Kumar
+                    </p>
+</div>
+</div>
+<!-- Period 8 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex items-center gap-4 border border-outline-variant hover:shadow-lg transition-shadow">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-container-low rounded-full shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">08</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg border-t-4 border-red-500 pt-1">Hindi</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container py-1 px-3 rounded-full">15:15 - 16:00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                        Mr. Pandey
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-2 pb-2 z-50 bg-surface dark:bg-on-background md:hidden shadow-[0_-4px_12px_rgba(0,0,0,0.05)]">
+<!-- Home (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-dim transition-colors rounded-xl p-2 w-16 active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-label-md text-[10px]">Home</span>
+</button>
+<!-- Timetable (Active) -->
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary-fixed-dim text-on-secondary-container dark:text-on-secondary-fixed-variant rounded-full px-5 py-1 w-auto active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined filled mb-1">calendar_month</span>
+<span class="font-label-md text-label-md text-[10px]">Timetable</span>
+</button>
+<!-- Subjects (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-dim transition-colors rounded-xl p-2 w-16 active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1">book</span>
+<span class="font-label-md text-label-md text-[10px]">Subjects</span>
+</button>
+<!-- Profile (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-dim transition-colors rounded-xl p-2 w-16 active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-label-md text-label-md text-[10px]">Profile</span>
+</button>
+</nav>
+</body></html>

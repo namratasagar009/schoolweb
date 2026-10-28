@@ -1,0 +1,19 @@
+{
+  "name": "ss-memorial-portal-backend",
+  "version": "1.0.0",
+  "description": "Node.js Express backend for S.S. Memorial School Portal",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": ["school-portal", "express", "backend"],
+  "author": "Antigravity",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

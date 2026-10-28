@@ -1,0 +1,290 @@
+export const seedData = {
+  student: {
+    name: "Aryan Sharma",
+    firstName: "Aryan",
+    classGrade: "Class 8-A",
+    rollNo: "18",
+    admissionNo: "SSM-2024-8042",
+    attendance: 92,
+    overallGrade: "94.5%",
+    rank: "3rd in Class",
+    house: "Newton House",
+    academicYear: "2025-2026",
+    guardianName: "Dr. Rajesh Sharma",
+    guardianContact: "+91 98765 43210",
+    schoolEmail: "aryan.s@ssmemorial.edu.in",
+    dateOfBirth: "2012-04-14",
+    bloodGroup: "O+",
+    address: "B-42, Civil Lines, Near City Park",
+    upNextClass: {
+      subject: "Mathematics",
+      teacher: "Mrs. Sharma",
+      time: "10:00 AM - 10:45 AM",
+      room: "Room 302",
+      icon: "calculate",
+      accentColor: "border-t-[#008ebf]"
+    }
+  },
+
+  timetable: {
+    Monday: [
+      { id: 1, period: "01", time: "09:15 - 10:00", subject: "English Literature", teacher: "Mrs. Sharma", room: "Room 302", active: false, accent: "border-blue-500", status: "Completed" },
+      { id: 2, period: "02", time: "10:00 - 10:45", subject: "Mathematics", teacher: "Mr. Gupta", room: "Lab 2", active: false, accent: "border-blue-500", status: "Completed" },
+      { id: 3, period: "03", time: "10:45 - 11:30", subject: "Physics", teacher: "Dr. Singh", room: "Physics Lab", active: true, accent: "border-green-500", status: "Live Now" },
+      { id: 4, period: "04", time: "11:30 - 12:15", subject: "Chemistry", teacher: "Ms. Verma", room: "Chem Lab", active: false, opacity: true, accent: "border-green-500", status: "Upcoming" },
+      { id: 5, isBreak: true, period: "LUNCH", time: "12:15 - 13:00", subject: "Lunch Break", duration: "45 mins", icon: "restaurant" },
+      { id: 6, period: "05", time: "13:00 - 13:45", subject: "History", teacher: "Mr. Chatterjee", room: "Room 104", active: false, accent: "border-yellow-500", status: "Upcoming" },
+      { id: 7, period: "06", time: "13:45 - 14:30", subject: "Computer Science", teacher: "Mrs. Iyer", room: "Computer Lab 1", active: false, accent: "border-purple-500", status: "Upcoming" },
+      { id: 8, period: "07", time: "14:30 - 15:15", subject: "Physical Education", teacher: "Coach Kumar", room: "Sports Ground", active: false, accent: "border-orange-500", status: "Upcoming" },
+      { id: 9, period: "08", time: "15:15 - 16:00", subject: "Hindi", teacher: "Mr. Pandey", room: "Room 302", active: false, accent: "border-red-500", status: "Upcoming" }
+    ],
+    Tuesday: [
+      { id: 10, period: "01", time: "09:15 - 10:00", subject: "Mathematics", teacher: "Mr. Gupta", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 11, period: "02", time: "10:00 - 10:45", subject: "English Language", teacher: "Mrs. Sharma", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 12, period: "03", time: "10:45 - 11:30", subject: "Biology", teacher: "Dr. Verma", room: "Bio Lab", active: false, accent: "border-green-500", status: "Upcoming" },
+      { id: 13, period: "04", time: "11:30 - 12:15", subject: "Social Studies", teacher: "Mr. Singh", room: "Room 104", active: false, accent: "border-yellow-500", status: "Upcoming" },
+      { id: 14, isBreak: true, period: "LUNCH", time: "12:15 - 13:00", subject: "Lunch Break", duration: "45 mins", icon: "restaurant" },
+      { id: 15, period: "05", time: "13:00 - 13:45", subject: "Computer Science", teacher: "Mr. Rao", room: "Computer Lab 1", active: false, accent: "border-purple-500", status: "Upcoming" },
+      { id: 16, period: "06", time: "13:45 - 14:30", subject: "Hindi", teacher: "Ms. Patel", room: "Room 302", active: false, accent: "border-red-500", status: "Upcoming" },
+      { id: 17, period: "07", time: "14:30 - 15:15", subject: "Art & Craft", teacher: "Mrs. Sen", room: "Art Studio", active: false, accent: "border-pink-500", status: "Upcoming" },
+      { id: 18, period: "08", time: "15:15 - 16:00", subject: "Library & Reading", teacher: "Mrs. David", room: "Central Library", active: false, accent: "border-blue-400", status: "Upcoming" }
+    ],
+    Wednesday: [
+      { id: 19, period: "01", time: "09:15 - 10:00", subject: "Physics", teacher: "Dr. Singh", room: "Physics Lab", active: false, accent: "border-green-500", status: "Upcoming" },
+      { id: 20, period: "02", time: "10:00 - 10:45", subject: "Chemistry", teacher: "Ms. Verma", room: "Chem Lab", active: false, accent: "border-green-500", status: "Upcoming" },
+      { id: 21, period: "03", time: "10:45 - 11:30", subject: "Mathematics", teacher: "Mr. Gupta", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 22, period: "04", time: "11:30 - 12:15", subject: "English Literature", teacher: "Mrs. Sharma", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 23, isBreak: true, period: "LUNCH", time: "12:15 - 13:00", subject: "Lunch Break", duration: "45 mins", icon: "restaurant" },
+      { id: 24, period: "05", time: "13:00 - 13:45", subject: "Geography", teacher: "Mr. Chatterjee", room: "Room 104", active: false, accent: "border-yellow-500", status: "Upcoming" },
+      { id: 25, period: "06", time: "13:45 - 14:30", subject: "Computer Science", teacher: "Mr. Rao", room: "Computer Lab 1", active: false, accent: "border-purple-500", status: "Upcoming" },
+      { id: 26, period: "07", time: "14:30 - 15:15", subject: "Music & Drama", teacher: "Mr. Roy", room: "Auditorium", active: false, accent: "border-indigo-500", status: "Upcoming" },
+      { id: 27, period: "08", time: "15:15 - 16:00", subject: "Physical Education", teacher: "Coach Kumar", room: "Sports Ground", active: false, accent: "border-orange-500", status: "Upcoming" }
+    ],
+    Thursday: [
+      { id: 28, period: "01", time: "09:15 - 10:00", subject: "Hindi", teacher: "Ms. Patel", room: "Room 302", active: false, accent: "border-red-500", status: "Upcoming" },
+      { id: 29, period: "02", time: "10:00 - 10:45", subject: "Mathematics", teacher: "Mr. Gupta", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 30, period: "03", time: "10:45 - 11:30", subject: "Social Studies", teacher: "Mr. Singh", room: "Room 104", active: false, accent: "border-yellow-500", status: "Upcoming" },
+      { id: 31, period: "04", time: "11:30 - 12:15", subject: "Biology", teacher: "Dr. Verma", room: "Bio Lab", active: false, accent: "border-green-500", status: "Upcoming" },
+      { id: 32, isBreak: true, period: "LUNCH", time: "12:15 - 13:00", subject: "Lunch Break", duration: "45 mins", icon: "restaurant" },
+      { id: 33, period: "05", time: "13:00 - 13:45", subject: "English Grammar", teacher: "Mrs. Sharma", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 34, period: "06", time: "13:45 - 14:30", subject: "Physics", teacher: "Dr. Singh", room: "Physics Lab", active: false, accent: "border-green-500", status: "Upcoming" },
+      { id: 35, period: "07", time: "14:30 - 15:15", subject: "Chemistry", teacher: "Ms. Verma", room: "Chem Lab", active: false, accent: "border-green-500", status: "Upcoming" },
+      { id: 36, period: "08", time: "15:15 - 16:00", subject: "Value Education & Club", teacher: "Mrs. Iyer", room: "Room 302", active: false, accent: "border-teal-500", status: "Upcoming" }
+    ],
+    Friday: [
+      { id: 37, period: "01", time: "09:15 - 10:00", subject: "Mathematics", teacher: "Mr. Gupta", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 38, period: "02", time: "10:00 - 10:45", subject: "Computer Science Project", teacher: "Mr. Rao", room: "Computer Lab 1", active: false, accent: "border-purple-500", status: "Upcoming" },
+      { id: 39, period: "03", time: "10:45 - 11:30", subject: "English Debate", teacher: "Mrs. Sharma", room: "Room 302", active: false, accent: "border-blue-500", status: "Upcoming" },
+      { id: 40, period: "04", time: "11:30 - 12:15", subject: "Science Practical", teacher: "Dr. Verma", room: "Composite Lab", active: false, accent: "border-green-500", status: "Upcoming" },
+      { id: 41, isBreak: true, period: "LUNCH", time: "12:15 - 13:00", subject: "Lunch Break", duration: "45 mins", icon: "restaurant" },
+      { id: 42, period: "05", time: "13:00 - 13:45", subject: "Social Studies", teacher: "Mr. Singh", room: "Room 104", active: false, accent: "border-yellow-500", status: "Upcoming" },
+      { id: 43, period: "06", time: "13:45 - 14:30", subject: "Hindi Storytelling", teacher: "Ms. Patel", room: "Room 302", active: false, accent: "border-red-500", status: "Upcoming" },
+      { id: 44, period: "07", time: "14:30 - 15:15", subject: "Sports & Games", teacher: "Coach Kumar", room: "Sports Ground", active: false, accent: "border-orange-500", status: "Upcoming" },
+      { id: 45, period: "08", time: "15:15 - 16:00", subject: "Weekly Review & Assembly", teacher: "Mrs. Sharma", room: "Room 302", active: false, accent: "border-indigo-500", status: "Upcoming" }
+    ]
+  },
+
+  notices: [
+    {
+      id: 1,
+      title: "School closed on Friday",
+      category: "Important",
+      isHighPriority: true,
+      date: "Oct 12",
+      time: "09:30 AM",
+      icon: "warning",
+      content: "Due to unexpected maintenance work in the main academic block, the school will remain closed for all classes this coming Friday. Online materials will be provided for self-study.",
+      read: false
+    },
+    {
+      id: 2,
+      title: "Annual Sports Day Registration",
+      category: "Sports",
+      isHighPriority: false,
+      date: "Oct 10",
+      time: "11:00 AM",
+      icon: "sports_soccer",
+      content: "Registrations are now open for the Annual Sports Day. Students can participate in a maximum of three track events. Please submit your forms to your respective class teachers by next Monday.",
+      hasActionButton: true,
+      actionText: "View Details",
+      read: false
+    },
+    {
+      id: 3,
+      title: "Library Book Return Deadline",
+      category: "Academic",
+      isHighPriority: false,
+      date: "Oct 08",
+      time: "02:15 PM",
+      icon: "library_books",
+      content: "A gentle reminder that all library books issued before the mid-term break must be returned by this Wednesday to avoid late fees.",
+      read: true
+    },
+    {
+      id: 4,
+      title: "Science Exhibition Entries Open",
+      category: "Academic",
+      isHighPriority: false,
+      date: "Oct 05",
+      time: "10:00 AM",
+      icon: "science",
+      content: "Submit your innovative science project models for the Inter-School Science Fair 2026. Top 3 projects get state-level nominations.",
+      read: true
+    }
+  ],
+
+  subjects: [
+    {
+      id: "eng",
+      name: "English",
+      type: "Compulsory",
+      teacher: "Mr. Sharma",
+      icon: "menu_book",
+      accentColor: "border-t-[#008ebf]",
+      iconColor: "text-[#008ebf]",
+      topics: ["Poetry & Drama", "Grammar & Syntax", "Creative Writing", "Shakespearean Prose"],
+      materialsCount: 14,
+      syllabusProgress: 85
+    },
+    {
+      id: "math",
+      name: "Mathematics",
+      type: "Compulsory",
+      teacher: "Ms. Gupta",
+      icon: "calculate",
+      accentColor: "border-t-[#ba1a1a]",
+      iconColor: "text-[#ba1a1a]",
+      topics: ["Linear Equations", "Algebraic Expressions", "Geometry & Triangles", "Statistics & Probability"],
+      materialsCount: 22,
+      syllabusProgress: 78
+    },
+    {
+      id: "sci",
+      name: "Science",
+      type: "Compulsory",
+      teacher: "Dr. Verma",
+      icon: "science",
+      accentColor: "border-t-[#3f465c]",
+      iconColor: "text-[#3f465c]",
+      topics: ["Cell Biology", "Chemical Reactions", "Force & Laws of Motion", "Light & Reflection"],
+      materialsCount: 18,
+      syllabusProgress: 90
+    },
+    {
+      id: "sst",
+      name: "Social Studies",
+      type: "Compulsory",
+      teacher: "Mr. Singh",
+      icon: "public",
+      accentColor: "border-t-[#566771]",
+      iconColor: "text-[#566771]",
+      topics: ["The Indian Constitution", "Resources & Development", "The Nationalist Movement", "Map Work"],
+      materialsCount: 12,
+      syllabusProgress: 70
+    },
+    {
+      id: "hin",
+      name: "Hindi",
+      type: "Compulsory",
+      teacher: "Ms. Patel",
+      icon: "language",
+      accentColor: "border-t-[#001e2c]",
+      iconColor: "text-[#001e2c]",
+      topics: ["Vyakaran & Rachna", "Kavya Khand", "Gadya Khand", "Anucched Lekhan"],
+      materialsCount: 10,
+      syllabusProgress: 92
+    },
+    {
+      id: "cs",
+      name: "Computer Science",
+      type: "Elective",
+      teacher: "Mr. Rao",
+      icon: "computer",
+      accentColor: "border-t-[#131b2e]",
+      iconColor: "text-[#131b2e]",
+      topics: ["Python Fundamentals", "Database & SQL", "HTML & CSS Web Design", "Cyber Safety"],
+      materialsCount: 28,
+      syllabusProgress: 96
+    },
+    {
+      id: "pe",
+      name: "Physical Education",
+      type: "Elective",
+      teacher: "Coach D'Souza",
+      icon: "sports_basketball",
+      accentColor: "border-t-[#0c1e26]",
+      iconColor: "text-[#0c1e26]",
+      topics: ["Athletics & Track", "Basketball Rules", "Yoga & Wellness", "First Aid Basics"],
+      materialsCount: 8,
+      syllabusProgress: 100
+    }
+  ],
+
+  homework: [
+    {
+      id: 1,
+      subject: "Mathematics",
+      badgeColor: "bg-tertiary-fixed text-on-tertiary-fixed",
+      dueText: "Due Tomorrow, 5 PM",
+      isUrgent: true,
+      title: "Linear Equations Exercise 4.2",
+      description: "Complete questions 1 through 15 from Chapter 4 in your practice notebook.",
+      status: "Pending",
+      assignedDate: "2026-10-11"
+    },
+    {
+      id: 2,
+      subject: "Science",
+      badgeColor: "bg-secondary-fixed text-on-secondary-fixed",
+      dueText: "Due Oct 15",
+      isUrgent: false,
+      title: "Cell Biology Lab Diagram",
+      description: "Draw and label plant vs animal cell structures in your practical manual.",
+      status: "Pending",
+      assignedDate: "2026-10-09"
+    },
+    {
+      id: 3,
+      subject: "Computer Science",
+      badgeColor: "bg-primary-fixed text-on-primary-fixed",
+      dueText: "Submitted",
+      isUrgent: false,
+      title: "Python Loops & Conditions Assignment",
+      description: "Submit python script solving Fibonacci series and prime number checkers.",
+      status: "Completed",
+      assignedDate: "2026-10-05"
+    }
+  ],
+
+  assemblies: {
+    today: {
+      hostClass: "Class 5-B",
+      theme: "Environmental Conservation & Water Saving",
+      time: "08:00 AM",
+      location: "Main Assembly Grounds",
+      dutyTeacher: "Mr. Chatterjee"
+    },
+    upcoming: [
+      { day: "Tue", classRoom: "5-C", label: "Tomorrow", date: "Oct 13" },
+      { day: "Wed", classRoom: "6-A", label: "Oct 14", date: "Oct 14" },
+      { day: "Thu", classRoom: "6-B", label: "Oct 15", date: "Oct 15" },
+      { day: "Fri", classRoom: "6-C", label: "Oct 16", date: "Oct 16" }
+    ]
+  },
+
+  results: {
+    overallGrade: "94.5% (A+)",
+    classRank: "3rd Position",
+    academicYear: "2025-2026",
+    term: "Mid-Term Examination",
+    classGrade: "Class 8-A",
+    subjects: [
+      { subject: "Mathematics", marksObtained: 98, maxMarks: 100, grade: "A+" },
+      { subject: "Computer Science", marksObtained: 96, maxMarks: 100, grade: "A+" },
+      { subject: "Science", marksObtained: 94, maxMarks: 100, grade: "A+" },
+      { subject: "English Literature", marksObtained: 91, maxMarks: 100, grade: "A+" },
+      { subject: "Social Studies", marksObtained: 89, maxMarks: 100, grade: "A" },
+      { subject: "Hindi", marksObtained: 93, maxMarks: 100, grade: "A+" }
+    ]
+  }
+};
